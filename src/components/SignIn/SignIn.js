@@ -7,12 +7,10 @@ import {
 
 function SignIn(params) {
   return (
-    <div>
-      <PasswordAuthenticationForm
-        feather={params.feather}
-        redirectUrl="http://localhost:3000/v"
-      />
-    </div>
+    <PasswordlessAuthenticationForm
+      feather={params.feather}
+      redirectUrl="http://localhost:3000/v"
+    />
   );
 }
 

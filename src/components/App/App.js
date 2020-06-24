@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Feather, FeatherContext } from "feather-client-react";
-import SignIn from "./SignIn.js";
-import VerifySignIn from "./VerifySignIn.js";
+import SignIn from "../SignIn";
+import VerifySignIn from "../VerifySignIn";
 import "./App.css";
 
 function App() {
