@@ -9,7 +9,7 @@ Go the https://feather.id and create an account to get your project's API key.
 ### 2. Initialize the client
 
 ```sh
-yarn add feather-client-react
+$ yarn add feather-client-react
 ```
 
 ```js
@@ -18,7 +18,7 @@ import { Feather } from "feather-client-react";
 const feather = Feather("pk_test_....");
 
 feather.onStateChange((currentSession, currentUser) => {
-  // Get updates anytime the current authentication state changes
+  // Get updates anytime your app's authentication state changes
 });
 ```
 
