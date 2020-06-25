@@ -15,14 +15,17 @@ function VerifySignIn(params) {
       })
       .catch(error => {
         // TODO show something went wrong message
-        setError(error.message);
-        console.log(error);
+        if (!user) {
+          setError(error.message);
+          console.log(error);
+        }
       });
   });
 
   return (
     <div>
-      <p>{error ? error : "Verifying..."}</p>
+      <p>{!error && !user ? "Verifying..." : ""}</p>
+      <p>{error ? error : ""}</p>
       <p>{user && JSON.stringify(user)}</p>
     </div>
   );
